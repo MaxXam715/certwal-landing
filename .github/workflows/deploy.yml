@@ -1,0 +1,45 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  SERVER_HOST: andranik1.beget.tech
+  SERVER_USER: andranik1
+  SERVER_PATH: /home/a/andranik1/certwal-landing/public_html
+
+jobs:
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          node-version: [16]
+
+      # Install ssh key
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2.3.1
+        with:
+          node-version: [16]
+          key: "${{ secrets.KEY }}"
+          known_hosts: "just-a-placeholder-so-we-dont-get-errors"
+
+      - name: Generate auth hosts
+        run: ssh-keyscan -H ${{ env.SERVER_HOST }} >> ~/.ssh/known_hosts
+
+
+      # Deploy
+      - name: Run command on remote server
+        uses: D3rHase/ssh-command-action@v0.2.2
+        with:
+          host: ${{env.SERVER_HOST}}
+          user: ${{env.SERVER_USER}}
+          private_key: ${{secrets.KEY}}
+          command: |
+            cd ${{ env.SERVER_PATH }};
+            git checkout master;
+            git pull origin master
