@@ -31,7 +31,6 @@ jobs:
       - name: Generate auth hosts
         run: ssh-keyscan -H ${{ env.SERVER_HOST }} >> ~/.ssh/known_hosts
 
-
       # Deploy
       - name: Run command on remote server
         uses: D3rHase/ssh-command-action@v0.2.2
