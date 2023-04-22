@@ -1,0 +1,8 @@
+/** Main Colors **/
+:root {
+  --green: #9AE940;
+
+  --back-body: #131313;
+  --container: 1680px;
+  --transition: 0.3s;
+}

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    font-size: 16px;
+    background-color: #000;
+}
+
+.icon.close {
+    mask-image: url(close.svg);
+    -webkit-mask-image: url(close.svg);
+}
+
+.icon.arrow-top-right {
+    mask-image: url(arrow-top-right.svg);
+    -webkit-mask-image: url(arrow-top-right.svg);
+}
+
+.icon.arrow-bottom {
+    mask-image: url(arrow-bottom.svg);
+    -webkit-mask-image: url(arrow-bottom.svg);
+}
