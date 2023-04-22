@@ -18,13 +18,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          node-version: [16]
+          node-version: '16'
 
       # Install ssh key
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2.3.1
         with:
-          node-version: [16]
+          node-version: '16'
           key: "${{ secrets.KEY }}"
           known_hosts: "just-a-placeholder-so-we-dont-get-errors"
 
