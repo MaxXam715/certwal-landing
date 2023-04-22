@@ -8,7 +8,7 @@ on:
 env:
   SERVER_HOST: wolf1.beget.com
   SERVER_USER: andranik1
-  SERVER_PATH: /certwal-landing/public_html
+  SERVER_PATH: /home/a/andranik1/certwal-landing/public_html
 
 jobs:
 
