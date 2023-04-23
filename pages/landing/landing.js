@@ -1,12 +1,12 @@
-import G_header from "/components/header.js"; // header
-import FirstScreen from "./FirstScreen.js"; // первй экран
-import RunningLine from "./RunningLine.js"; // бегущая строка (слайдер)
-import AboutProject from "./AboutProject.js"; // О проекте
-import LaunchStart from "./LaunchStart.js"; // Запуск цифровых сертификатов
-import ActivateCertificate from "./ActivateCertificate.js"; // Как активировать сертификат
-import CoinInfo from "./CoinInfo.js"; // Инфо о монете
-import RoadMap from "./RoadMap.js"; // Дорожная карта
-import Cooperation from "./Cooperation.js"; // Сотрудничество
+import G_header from "/components/header.js?v=1.3251"; // header
+import FirstScreen from "./FirstScreen.js?v=1.3251"; // первй экран
+import RunningLine from "./RunningLine.js?v=1.3251"; // бегущая строка (слайдер)
+import AboutProject from "./AboutProject.js?v=1.3251"; // О проекте
+import LaunchStart from "./LaunchStart.js?v=1.3251"; // Запуск цифровых сертификатов
+import ActivateCertificate from "./ActivateCertificate.js?v=1.3251"; // Как активировать сертификат
+import CoinInfo from "./CoinInfo.js?v=1.3251"; // Инфо о монете
+import RoadMap from "./RoadMap.js?v=1.3251"; // Дорожная карта
+import Cooperation from "./Cooperation.js?v=1.3251"; // Сотрудничество
 
 G_header(); // header
 FirstScreen(); // первй экран

@@ -6,7 +6,7 @@ export default function FirstScreen() {
             <div class="circle-blur green circle-blur-1"></div>
         
             <div class="main-info">
-                <h1 class="index-header_h1 header-main-index">инвестируйте в будущее <br> с <span class="separator-text">КРИПТО-сертификатами</span>,<br>обеспеченными криптовалютой</h1>
+                <h1 class="index-header_h1 header-main-index">откройте будущее<br> с <span class="separator-text">КРИПТО-сертификатами</span>,<br>обеспеченными криптовалютой</h1>
                 <div class="intro-desc">
                     <div class="circle-box">
                         <div class="circle-empty"></div> 

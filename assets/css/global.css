@@ -21,6 +21,29 @@ body {
   background-color: var(--back-body);
 }
 
+/* scroll */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(150, 150, 150, 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+  height: 12px;
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.5);
+  border-radius: 5px;
+  border: 3px solid transparent;
+}
+
+/* end - scroll */
+
 
 .no-scroll {
   overflow: hidden;

@@ -7,7 +7,7 @@ export default function CoinInfo() {
                     <img src="/assets/img/coin.png" alt="coin">
                 </div>
                 <div class="row-info-coin">
-                    <h5 class="name-coin">Shera Token</h5>
+                    <h5 class="name-coin">Shera Token (SHR)</h5>
                     <p class="desc text-md">Shera Token - это наш служебный токен. Это основа для развития алгоритма и кошелька Deftly, расширения TVL, сборов и вознаграждений.</p>
                 </div>
             </div>
