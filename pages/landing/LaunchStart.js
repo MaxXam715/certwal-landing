@@ -1,6 +1,6 @@
 export default function LaunchStart() {
 
-    const dataSert = ajaxRequest({url: '/ajax/LaunchStartCert.json?v=1.3255', method: 'GET'});
+    const dataSert = ajaxRequest({url: '/ajax/LaunchStartCert.json?v=1.3257', method: 'GET'});
     // console.log('dataSert', dataSert);
 
     var html = `
