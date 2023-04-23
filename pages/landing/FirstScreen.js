@@ -1,6 +1,6 @@
 export default function FirstScreen() {
     var html = `
-    <section class="cw-section section-first">
+    <section class="cw-section section-first" data-anchor="section-first">
         <div class="G-container">
         
             <div class="circle-blur green circle-blur-1"></div>

@@ -1,6 +1,8 @@
 .section-first {
     position: relative;
     height: calc(100vh - 103px);
+    height: calc((var(--vh, 1vh) * 100) - 103px);
+    margin-bottom: 100px;
 }
 
 .section-first .G-container {
@@ -9,9 +11,9 @@
 }
 
 .section-first .circle-blur-1 {
-    top: 0;
+    bottom: 0;
     left: 0;
-    transform: translate(-60%, 50%);
+    transform: translate(-60%, 0%);
 }
 
 .section-first .main-info {
@@ -195,6 +197,11 @@
 }
 
 @media (max-width: 767px) {
+    .section-first {
+        height: calc(100vh - 62px);
+        height: calc((var(--vh, 1vh) * 100) - 62px);
+    }
+
     .section-first .cub-container {
         display: none;
     }
@@ -226,7 +233,4 @@
         font-size: 12px;
     }
 
-    .section-first .scroll-container {
-        bottom: 0;
-    }
 }

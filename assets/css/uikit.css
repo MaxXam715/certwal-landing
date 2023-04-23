@@ -272,11 +272,12 @@
 
 .index-header_h3 {
     font-family: 'DrukWideCyr';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 120%;
-    color: var(--black-800);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 160%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 .index-header_h4 {
@@ -306,11 +307,9 @@
 }
 
 .text-md {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 140%;
-    color: var(--black-800);
+    font-size: 16px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .text-caption {
@@ -336,7 +335,7 @@
     }
 
     .index-header_h3 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .index-header_h4 {
@@ -346,6 +345,10 @@
     .index-header_h5 {
         font-weight: 600;
         font-size: 18px;
+    }
+
+    .text-md {
+        font-size: 14px;
     }
 }
 
@@ -371,10 +374,6 @@
         font-weight: 600;
         font-size: 20px;
     }
-
-    .text-md {
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 767px) {
@@ -387,7 +386,7 @@
     }
 
     .index-header_h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .index-header_h4 {

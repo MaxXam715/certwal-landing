@@ -7,8 +7,6 @@
 @import url("/assets/icons/icons.css");
 /* Bestcon UI-kit */
 @import url("/assets/css/uikit.css");
-/* Home CSS */
-@import url("/assets/css/home.css");
 /* Mobile nav */
 @import url("/assets/css/components/Mobile-nav.css");
 /* reset CSS */
@@ -16,8 +14,6 @@
 /* ---------------------------------------------------------------------- */
 
 body {
-  min-height: 100vh;
-  height: 500vh;
   overflow-y: overlay;
   overflow-x: hidden !important;
   font-family: 'Rock Star', sans-serif;
@@ -25,28 +21,6 @@ body {
   background-color: var(--back-body);
 }
 
-/* scroll */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(150, 150, 150, 0.5) transparent;
-}
-
-*::-webkit-scrollbar {
-  height: 12px;
-  width: 8px;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: rgba(150, 150, 150, 0.5);
-  border-radius: 5px;
-  border: 3px solid transparent;
-}
-
-/* end - scroll */
 
 .no-scroll {
   overflow: hidden;
@@ -73,6 +47,7 @@ body {
 
 #app {
   min-height: 80vh;
+  overflow: hidden;
 }
 
 .width-fullRight {
@@ -160,6 +135,10 @@ body {
   width: 400px;
   aspect-ratio: 1 / 1;
   background-color: var(--green);
-  opacity: 0.2;
+  opacity: 0.4;
   filter: blur(200px);
+}
+
+.separator-text {
+  color: var(--green);
 }

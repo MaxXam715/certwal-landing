@@ -28,3 +28,13 @@
     mask-image: url(arrow-bottom.svg);
     -webkit-mask-image: url(arrow-bottom.svg);
 }
+
+.icon.arrow-right {
+    mask-image: url(arrow-right.svg);
+    -webkit-mask-image: url(arrow-right.svg);
+}
+
+.icon.star {
+    mask-image: url(star.svg);
+    -webkit-mask-image: url(star.svg);
+}

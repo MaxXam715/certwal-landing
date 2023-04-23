@@ -11,9 +11,9 @@ export default function G_header() {
                 <div class="nav-wrapper">
                     <nav class="nav-page mob-hidden">
                         <button type="button" class="btn btn-anchor" data-anchor="about-project">О проекте</button>
-                        <button type="button" class="btn btn-anchor" data-anchor="certificates">Сертификаты</button>
-                        <button type="button" class="btn btn-anchor" data-anchor="advantages">Преимущества</button>
-                        <button type="button" class="btn btn-anchor" data-anchor="coin">Shera-coin</button>
+                        <button type="button" class="btn btn-anchor" data-anchor="launch-start">Сертификаты</button>
+                        <button type="button" class="btn btn-anchor" data-anchor="activate-certificate">Активация</button>
+                        <button type="button" class="btn btn-anchor" data-anchor="coin-info">Shera-coin</button>
                         <button type="button" class="btn btn-anchor" data-anchor="road-map">Дорожная карта</button>
                     </nav>
                 </div>
@@ -55,13 +55,22 @@ export default function G_header() {
         }
 
         navmob.find('.nav-page .btn-anchor').click(function () {
-            Anchor_menu();
+            var anchor = $(this).attr('data-anchor');
+            Anchor_menu(anchor);
+        });
+
+        $(document).mouseup( function(e) {
+            var div = navmob.find('.menu-wrapper');
+            if ( !div.is(e.target) && div.has(e.target).length === 0 ) {
+                MobileNav_close(navmob);
+            }
         });
 
     });
 
     html.find('.nav-page .btn-anchor').click(function () {
-        Anchor_menu();
+        var anchor = $(this).attr('data-anchor');
+        Anchor_menu(anchor);
     });
 }
 
@@ -76,11 +85,14 @@ function MobileNav_open(navmob) {
 function MobileNav_close(navmob) {
     $('.G-mobile-menu').closest('.G_header').find('.target-wrapper .btn-toggle-menu').removeClass('open-nav')
     $('.G-mobile-menu').removeClass('open').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
-        console.log('delete')
         $('.G-mobile-menu').remove();
     });
 }
 
-function Anchor_menu() {
-    console.log('click')
+function Anchor_menu(anchor) {
+    let headerHeight = $('.G_header').height();
+    $('html, body').animate({
+        scrollTop: $('section[data-anchor='+anchor+']').offset().top - (headerHeight + 50)
+    }, 600);
+    MobileNav_close();
 }
