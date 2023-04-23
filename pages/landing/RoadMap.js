@@ -1,6 +1,6 @@
 export default function RoadMap() {
 
-    const dataRoadMax = ajaxRequest({url: '/ajax/RoadMap.json?v=1.3251', method: 'GET'});
+    const dataRoadMax = ajaxRequest({url: '/ajax/RoadMap.json?v=1.3252', method: 'GET'});
     // console.log('dataRoadMax', dataRoadMax);
 
     var html = `

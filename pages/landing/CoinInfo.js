@@ -4,7 +4,7 @@ export default function CoinInfo() {
         <div class="G-container">
             <div class="wrapper-container">
                 <div class="row-image-coin">
-                    <img src="/assets/img/coin.png" alt="coin">
+                    <img src="/assets/img/coin.png?v=1.3252" alt="coin">
                 </div>
                 <div class="row-info-coin">
                     <h5 class="name-coin">Shera Token (SHR)</h5>
