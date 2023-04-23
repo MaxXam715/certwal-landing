@@ -6,9 +6,9 @@ on:
       - master
 
 env:
-  SERVER_HOST: wolf1
+  SERVER_HOST: andranik1.beget.tech
   SERVER_USER: andranik1
-  SERVER_PATH: ~/certwal-landing/public_html
+  SERVER_PATH: /home/a/andranik1/certwal-landing/public_html
 
 jobs:
 
