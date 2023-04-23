@@ -88,6 +88,10 @@
     margin-bottom: 30px;
 }
 
+.section-road-map .grid-container-rm .switcher-content .item-content-switcher .desc {
+    white-space: break-spaces;
+}
+
 .section-road-map .grid-container-rm .switcher-content .item-content-switcher .date-start {
     display: flex;
     align-items: center;

@@ -1,6 +1,6 @@
 export default function ActivateCertificate() {
 
-    const dataActivatedSert = ajaxRequest({url: '/ajax/ActivateCertificate.json?v=1.3252', method: 'GET'});
+    const dataActivatedSert = ajaxRequest({url: '/ajax/ActivateCertificate.json?v=1.3254', method: 'GET'});
     // console.log('dataActivatedSert', dataActivatedSert);
 
     var html = `

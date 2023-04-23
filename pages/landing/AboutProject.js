@@ -9,15 +9,15 @@ export default function AboutProject() {
             <div class="advantages-numbers">
                 <div class="grid-container">
                     <div class="item">
-                        <p class="value">20+</p>
+                        <p class="value">100+</p>
                         <p class="label">направлений</p>
                     </div>
                     <div class="item">
-                        <p class="value">$13k+</p>
-                        <p class="label">партнеров</p>
+                        <p class="value">12</p>
+                        <p class="label">компаний</p>
                     </div>
                     <div class="item">
-                        <p class="value">500+</p>
+                        <p class="value">150+</p>
                         <p class="label">пользователей</p>
                     </div>
                 </div>
