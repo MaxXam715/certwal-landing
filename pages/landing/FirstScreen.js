@@ -20,14 +20,14 @@ export default function FirstScreen() {
             
             <div class="cub-container">
                 <img src="/assets/img/cub-grid.svg" alt="cub-grid" class="cub-grid">
-                <img src="/assets/img/coin.png?v=1.3258" alt="coin" class="coin">
+                <img src="/assets/img/coin.png?v=1.3259" alt="coin" class="coin">
             </div>
             
             <div class="scroll-container">
                 <div class="circle">
                     <i class="icon arrow-bottom"></i>
                 </div>
-                <span class="title">scroll down</span>
+                <span class="title">Листай ниже</span>
             </div>
             
         </div>
