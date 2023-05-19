@@ -188,6 +188,10 @@ body {
   padding: 0 20px;
 }
 
+.label-field .input-field:hover {
+  border-color: #525252;
+}
+
 .label-field .input-field:focus {
   border-color: var(--green);
 }

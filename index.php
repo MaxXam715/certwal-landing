@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- meta -->
-    <meta property="og:locale" content="ru_RU 2">
+    <meta property="og:locale" content="ru_RU 3">
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="og:site_name" content="CERTWAL" />
     <meta property="vk:image" content="https://certwal.com/static/meta-banner.jpg" />
@@ -30,10 +30,10 @@
     <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="/static/favicon.svg?v=1.3259">
-    <link rel="icon" type="image/png" href="/static/favicon.svg?v=1.3259">
-    <link rel="apple-touch-icon" href="/static/favicon.svg?v=1.3259">
-    <link rel="mask-icon" href="/static/favicon.svg?v=1.3259">
+    <link rel="shortcut icon" href="/static/favicon.svg?v=1.3261">
+    <link rel="icon" type="image/png" href="/static/favicon.svg?v=1.3261">
+    <link rel="apple-touch-icon" href="/static/favicon.svg?v=1.3261">
+    <link rel="mask-icon" href="/static/favicon.svg?v=1.3261">
 
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#131313">
@@ -46,11 +46,11 @@
     <!-- UiKit CSS -->
     <link rel="stylesheet" href="/plugins/uikit/uikit.min.css">
     <!-- Style global -->
-    <link rel="stylesheet" href="/assets/css/global.css?v=1.3259">
+    <link rel="stylesheet" href="/assets/css/global.css?v=1.3261">
     <!-- Splide -->
     <link rel="stylesheet" href="/plugins/splide-4.1.3/css/splide.min.css">
     <!-- Splide -->
-    <link rel="stylesheet" href="/pages/landing/css/landing.css?v=1.3259">
+    <link rel="stylesheet" href="/pages/landing/css/landing.css?v=1.3261">
 
 </head>
 <body>
@@ -61,9 +61,9 @@
 <script src="/plugins/uikit/uikit.min.js"></script>
 <script src="/plugins/splide-4.1.3/splide.min.js"></script>
 <script src="/plugins/splide-4.1.3/splide-extension-auto-scroll.min.js"></script>
-<script src="/assets/js/scripts.js?v=1.3259"></script>
+<script src="/assets/js/scripts.js?v=1.3261"></script>
 
-<script type="module" src="/pages/landing/landing.js?v=1.3259"></script>
+<script type="module" src="/pages/landing/landing.js?v=1.3261"></script>
 
 </body>
 </html>

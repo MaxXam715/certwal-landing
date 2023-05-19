@@ -74,7 +74,13 @@ export default function G_header() {
     });
 
     html.find('.btn-modal-getBonus').click(function () {
-        initModal_getBonus();
+        // initModal_getBonus();
+
+        import("/components/ModalGetBonus.js?v="+version).then(function(obj) {
+            obj.default();
+        }).catch(function(err) {
+            console.log('catch', err);
+        });
     });
 }
 
