@@ -20,7 +20,7 @@ function letterFormationMail($data) {
     foreach ($data['dataForm'] as $key => $value) {
         $body .= "
         <div>
-            <span>$key</span>
+            <span>$key:</span>
             <span>$value</span>
         </div>";
     }
