@@ -1,0 +1,59 @@
+.cw-modal-getBonus .container-body .modal-header {
+    display: none;
+}
+
+.cw-modal-getBonus.open:before {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.cw-modal-getBonus .container-body {
+    border: 2px solid #373737;
+    border-radius: 10px;
+}
+
+.cw-modal-getBonus .container-body .modal-content {
+    padding: 60px !important;
+}
+
+/* ------------ */
+
+.cw-modal-getBonus .container-getBonus {
+
+}
+
+.cw-modal-getBonus .container-getBonus .title-modal {
+    font-family: 'DrukWideCyr';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 160%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.cw-modal-getBonus .container-getBonus .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+}
+
+.cw-modal-getBonus .container-getBonus .form-wrapper .two-container {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.cw-modal-getBonus .container-getBonus .form-wrapper .btn-send {
+    width: 100%;
+    background-color: var(--green);
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 18px 20px;
+}
+
+.cw-modal-getBonus .container-getBonus .form-wrapper .btn-send:hover {
+    background-color: #7dbd33;
+}

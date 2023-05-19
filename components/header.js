@@ -19,7 +19,7 @@ export default function G_header() {
                 </div>
             
                 <div class="target-wrapper">
-                    <button type="button" class="btn btn-primary btn-getStarted mob-hidden">Get started</button>
+                    <button type="button" class="btn btn-primary btn-modal-getBonus mob-hidden">Получить бонус</button>
                     <button type="button" class="btn btn-primary btn-toggle-menu pc-hidden">
                         <span class="line"></span>
                         <span class="line"></span>
@@ -71,6 +71,10 @@ export default function G_header() {
     html.find('.nav-page .btn-anchor').click(function () {
         var anchor = $(this).attr('data-anchor');
         Anchor_menu(anchor);
+    });
+
+    html.find('.btn-modal-getBonus').click(function () {
+        initModal_getBonus();
     });
 }
 
