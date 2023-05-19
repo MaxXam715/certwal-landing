@@ -6,9 +6,13 @@ $settings = include('./settings.php'); // Подключаем скрытие д
 $to = array_shift($settings); // получатель(-и)
 $subject = $_POST['subject']; // Тема письма
 $message = letterFormationMail($_POST['dataForm']); // Формируем письмо
-$headers  = "MIME-Version: 1.0\r\n";
-$headers .= "Content-type: text/html; charset=utf-8\r\n";
-$headers .= "From: info@certwal.com\r\n";
+$headers = array(
+    'From' => 'info@certwal.com',
+    'Reply-To' => 'info@certwal.com',
+    'Content-type' => 'text/html; charset=utf-8',
+    'MIME-Version' => '1.0'
+);
+
 // Basic headers
 
 
