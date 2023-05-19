@@ -1,12 +1,17 @@
 <?php
 
-// Подключаем скрытие данные для отправки
-$settings = include('./settings.php');
+$settings = include('./settings.php'); // Подключаем скрытие данные для отправки
 
-$message = letterFormationMail($_POST);
-// отправка
-mail($settings['address'], $settings['subject'], $message);
+$to = array_shift($settings); // получатель(-и)
+$subject = $_POST['subject']; // Тема письма
+$message = letterFormationMail($_POST); // Формируем письмо
 
+$headers  = "From: info@certwal.com";
+$headers .= "MIME-Version: 1.0";
+$headers .= "Content-Type: text/html; charset=UTF-8";
+
+
+// Формирование письма
 function letterFormationMail($data) {
     $body  = "";
 
@@ -22,3 +27,11 @@ function letterFormationMail($data) {
 
     return $body;
 }
+
+// отправка
+mail(
+    $to,
+    $subject,
+    $headers,
+    $message
+);
