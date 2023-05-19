@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- meta -->
-    <meta property="og:locale" content="ru_RU">
+    <meta property="og:locale" content="ru_RU 2">
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="og:site_name" content="CERTWAL" />
     <meta property="vk:image" content="https://certwal.com/static/meta-banner.jpg" />
