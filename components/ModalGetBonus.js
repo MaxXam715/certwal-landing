@@ -1,25 +1,25 @@
 export default function initModal_getBonus() {
     var html = `
     <div class="container-getBonus">
-        <h3 class="title-modal">Получить бонус по сертификату</h3>
+        <h3 class="title-modal">Получить бонус по сертификату 2</h3>
         <form class="form-wrapper">
             <label class="label-field">
                 <input type="text" class="input-field valid-check" autocomplete="on" name="name" placeholder="Имя">
             </label>
-            <label class="label-field">
-                <span class="title"></span>
-                <input type="text" class="input-field valid-email" autocomplete="on" name="email" placeholder="Почта">
-            </label>
-            <div class="two-container">
-                <label class="label-field">
-                    <span class="title"></span>
-                    <input type="text" class="input-field valid-check" autocomplete="on" name="series-cert" placeholder="Серия">
-                </label>
-                <label class="label-field">
-                    <span class="title"></span>
-                    <input type="text" class="input-field valid-check" autocomplete="on" name="number-cert" placeholder="Номер">
-                </label>
-            </div>
+<!--            <label class="label-field">-->
+<!--                <span class="title"></span>-->
+<!--                <input type="text" class="input-field valid-email" autocomplete="on" name="email" placeholder="Почта">-->
+<!--            </label>-->
+<!--            <div class="two-container">-->
+<!--                <label class="label-field">-->
+<!--                    <span class="title"></span>-->
+<!--                    <input type="text" class="input-field valid-check" autocomplete="on" name="series-cert" placeholder="Серия">-->
+<!--                </label>-->
+<!--                <label class="label-field">-->
+<!--                    <span class="title"></span>-->
+<!--                    <input type="text" class="input-field valid-check" autocomplete="on" name="number-cert" placeholder="Номер">-->
+<!--                </label>-->
+<!--            </div>-->
             <label class="label-field">
                 <span class="title"></span>
                 <input type="text" class="input-field valid-check" autocomplete="on" name="number-wallet" placeholder="Номер кошелька">

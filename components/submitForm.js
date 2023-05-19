@@ -47,23 +47,24 @@ function submitForm(targetClick) {
     // Валидация пройдена и готова отправка формы
     if ( completion === countLabel && validation === true ) {
 
+        var arrayForm = {};
+
+        // сбор данных из формы
+        form.find('label').each(function () {
+            var input = $(this).find('input'),
+                label = input.attr('placeholder'),
+                value = input.val();
+
+            // arrayForm.push({[label]: value})
+            arrayForm[label] = value;
+        });
+
         // Шаблон данных для отправки
         var dataMail = {
             subject: "Тема письма",
             desc: "описание, что именно пришло от польз.",
-            data: {}
+            dataForm: arrayForm
         };
-
-        // сбор данных из формы
-        $(function () {
-            form.find('label').each(function () {
-                var input = $(this).find('input'),
-                    label = input.attr('placeholder'),
-                    value = input.val();
-
-                dataMail.data[label] = value;
-            });
-        });
 
         // определяем тип формы
         if (thisClick == 'get-bonus') {
@@ -83,8 +84,6 @@ function submitForm(targetClick) {
                 console.error('Заявка не отправлена!');
             });
         }
-
-        console.log('dataMail', dataMail)
 
     }
 }
