@@ -15,7 +15,7 @@ $headers .= 'From: <info@certwal.com>';
 
 // Формирование письма
 function letterFormationMail($data) {
-    $body = "<p>".$data['desc']."</p><br>";
+    $body = "<p><b>".$data['desc']."</b></p><br>";
 
     foreach ($data['dataForm'] as $key => $value) {
         $body .= "
