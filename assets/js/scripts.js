@@ -1,5 +1,5 @@
 // ---------- var global ----------
-var version = 1.3265;
+var version = 1.3267;
 
 
 // ---------- import ----------

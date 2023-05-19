@@ -5,7 +5,7 @@ $settings = include('./settings.php'); // Подключаем скрытие д
 
 $to = array_shift($settings); // получатель(-и)
 $subject = $_POST['subject']; // Тема письма
-$message = letterFormationMail($_POST['dataForm']); // Формируем письмо
+$message = letterFormationMail($_POST); // Формируем письмо
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $headers .= 'From: <info@certwal.com>';
@@ -15,9 +15,9 @@ $headers .= 'From: <info@certwal.com>';
 
 // Формирование письма
 function letterFormationMail($data) {
-    $body  = "";
+    $body = "<p>".$data."</p><br>";
 
-    foreach ($data as $key => $value) {
+    foreach ($data['dataForm'] as $key => $value) {
         $body .= "
         <div>
             <span>$key</span>
@@ -25,6 +25,7 @@ function letterFormationMail($data) {
         </div>";
     }
 
+    echo $body;
     return $body;
 }
 

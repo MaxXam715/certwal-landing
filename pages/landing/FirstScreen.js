@@ -20,7 +20,7 @@ export default function FirstScreen() {
             
             <div class="cub-container">
                 <img src="/assets/img/cub-grid.svg" alt="cub-grid" class="cub-grid">
-                <img src="/assets/img/coin.png?v=1.3265" alt="coin" class="coin">
+                <img src="/assets/img/coin.png?v=1.3267" alt="coin" class="coin">
             </div>
             
             <div class="scroll-container">
