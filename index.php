@@ -1,9 +1,23 @@
 <?php
+GLOBAL $globals;
+$_SESSION['subdomain'] = $globals['subdomain'];
+
+require('/backend/clearCash.php');
+
+$file_ver = 1;
+$root = $globals['doc_root'];
+
 if ($_SERVER['HTTP_HOST'] == 'certwal-landing') {
     $v = mt_rand(10000, 99999999);
 } else {
-    $v = 1.16946;
+    $v = 1.16947;
 }
+
+if($file_ver && isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "planetarf.ru") !== false) {
+    clearCash($root."/pages", $v);
+    clearCash($root."/assets", $v);
+}
+
 ?>
 <!doctype html>
 <html lang="ru">
