@@ -10,7 +10,7 @@ $root = $globals['doc_root'];
 if ($_SERVER['HTTP_HOST'] == 'certwal-landing') {
     $v = mt_rand(10000, 99999999);
 } else {
-    $v = 1.16953;
+    $v = 1.16954;
 }
 
 if($file_ver && isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "certwal.com") !== false) {
@@ -26,8 +26,7 @@ if($file_ver && isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "c
     <title>CERTWAL — будущее c цифровыми сертификатами</title>
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <!-- meta -->
     <meta property="og:locale" content="ru_RU 3">
     <meta property="twitter:card" content="summary_large_image" />

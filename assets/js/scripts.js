@@ -1,9 +1,13 @@
 // ---------- var global ----------
 var version = $('head').find('#versionContent').attr('content'),
-    mailCrt = 'info@certwal.com',
-    vh = window.innerHeight / 100;
+    mailCrt = 'info@certwal.com';
 
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+const resizeOps = () => {
+    document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+};
+
+resizeOps();
+window.addEventListener("resize", resizeOps);
 
 // ---------- import ----------
 $.ajax({ // header
