@@ -1,12 +1,6 @@
 <?php
 
-//$addressTo = [
-//    "gorbatenkomax@yandex.ru",
-//    "info@certwal.com",
-//    "maxgorbatenko193@gmail.com"
-//];
-
-$recipients = array(
+$addressTo = array(
     "gorbatenkomax@yandex.ru",
     "info@certwal.com",
     "maxgorbatenko193@gmail.com"
