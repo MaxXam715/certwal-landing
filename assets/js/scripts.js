@@ -29,6 +29,14 @@ $.ajax({ // telegram
 });
 
 
+$(document).on('click', 'body', function () {
+   var width = window.innerWidth,
+       height = window.innerHeight;
+
+    alert('width: '+width+ '\nheight: '+height, );
+});
+
+
 function mergeJson(json1, json2){
     for(var i in json1){
         if(getType(json1[i]) == 'object'){
