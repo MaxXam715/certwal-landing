@@ -9,8 +9,8 @@ function submitForm(targetClick) {
 
     $(pathLabel).each(function () {
 
-        var pathInput = $(this).find('input, textarea, select');
-        var pattern = /^([a-z0-9_\.-])+[@][a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+        var pathInput = $(this).find('input, textarea, select'),
+            pattern = /^([a-z0-9_\.-])+[@][a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
 
         // Проверка полей
         if ( pathInput.hasClass('valid-check') && pathInput.val().length < 1 ) { // проверка на любое слово где > 1 символа
@@ -38,9 +38,9 @@ function submitForm(targetClick) {
             validation = true;
             completion++;
             $(this).find('input, textarea, select').removeClass('error-valid')
-            $(this).closest('form').find('.error-notification').remove();
+            form.find('.error-notification').remove();
         }
-        $('form .error-notification').slideDown(200);
+        form.find('.error-notification').slideDown(200);
 
     });
 

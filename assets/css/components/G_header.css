@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(28, 28, 28, 0.22);
+    /*background: rgba(28, 28, 28, 0.22);*/
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
 }
@@ -56,6 +56,15 @@
     display: flex;
     width: max-content;
     margin-left: auto;
+}
+
+.G_header .grid-container .target-wrapper .mailto {
+    font-size: 14px;
+}
+
+.G_header .grid-container .target-wrapper .mailto:hover {
+    color: var(--green);
+    cursor: pointer;
 }
 
 .G_header .grid-container .target-wrapper .btn-toggle-menu {

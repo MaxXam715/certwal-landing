@@ -16,22 +16,33 @@ export default function FirstScreen() {
                     </div>
                     <p class="text">Платформа с цифровыми сертификатами, которая позволяет организациям безопасно выдавать цифровые монеты и управлять ими</p>
                 </div>
+                <div class="btn-container">
+                    <button type="button" class="btn btn-primary js-btn-modal-getBonus">Получить бонус</button>
+                </div>
             </div>
             
             <div class="cub-container">
                 <img src="/assets/img/cub-grid.svg" alt="cub-grid" class="cub-grid">
-                <img src="/assets/img/coin.png?v=1.3267" alt="coin" class="coin">
+                <img src="/assets/img/coin.png?v=1.3271" alt="coin" class="coin">
             </div>
             
             <div class="scroll-container">
                 <div class="circle">
                     <i class="icon arrow-bottom"></i>
                 </div>
-                <span class="title">Листай ниже</span>
+                <span class="title">Листайте ниже</span>
             </div>
             
         </div>
     </section>`;
     html = $(html);
     $('#app').append(html);
+
+    html.find('.js-btn-modal-getBonus').click(function () {
+        import("/components/ModalGetBonus.js?v="+version).then(function(obj) {
+            obj.default();
+        }).catch(function(err) {
+            console.log('catch', err);
+        });
+    });
 }

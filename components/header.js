@@ -19,7 +19,7 @@ export default function G_header() {
                 </div>
             
                 <div class="target-wrapper">
-                    <button type="button" class="btn btn-primary btn-modal-getBonus mob-hidden">Получить бонус</button>
+                    <a href="mailto: ${mailCrt}" class="mailto mob-hidden">${mailCrt}</a>
                     <button type="button" class="btn btn-primary btn-toggle-menu pc-hidden">
                         <span class="line"></span>
                         <span class="line"></span>
@@ -41,7 +41,13 @@ export default function G_header() {
                 <div class="menu-content">
                     <nav class="nav-page">
                         ${navPc}
-                    </nav> 
+                    </nav>
+                    <div class="contact-us">
+                        <a href="mailto: ${mailCrt}" class="mailto">${mailCrt}</a>
+                    </div>
+                    <div class="events-container">
+                        <button type="button" class="btn btn-primary btn-green js-btn-modal-getBonus">Получить бонус</button>
+                    </div>
                 </div>
             </div>
         </div>`;
@@ -59,9 +65,16 @@ export default function G_header() {
             Anchor_menu(anchor);
         });
 
-        $(document).mouseup( function(e) {
-            var div = navmob.find('.menu-wrapper');
-            if ( !div.is(e.target) && div.has(e.target).length === 0 ) {
+        navmob.find('.js-btn-modal-getBonus').click(function () {
+            import("/components/ModalGetBonus.js?v="+version).then(function(obj) {
+                obj.default();
+            }).catch(function(err) {
+                console.log('catch', err);
+            });
+        });
+
+        navmob.click(function(e) {
+            if ($(e.target).closest('.menu-content').length == 0) {
                 MobileNav_close(navmob);
             }
         });
@@ -74,8 +87,6 @@ export default function G_header() {
     });
 
     html.find('.btn-modal-getBonus').click(function () {
-        // initModal_getBonus();
-
         import("/components/ModalGetBonus.js?v="+version).then(function(obj) {
             obj.default();
         }).catch(function(err) {

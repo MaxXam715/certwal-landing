@@ -1,7 +1,8 @@
 <?php
 
 $addressTo = [
-    "gorbatenkomax@yandex.ru"
+    "gorbatenkomax@yandex.ru",
+    "info@certwal.com"
 ];
 
 return $addressTo;

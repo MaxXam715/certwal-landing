@@ -5,7 +5,7 @@ export default function Cooperation() {
             <div class="wrapper-container">
                 <h3 class="title-section index-header_h3">Приглашаем<br>к сотрудничеству</h3>
                 <div class="contact-info">
-                    <a href="mailto: info@certwal.com" class="contact mail">info@certwal.com</a>
+                    <a href="mailto: ${mailCrt}" class="contact mail">${mailCrt}</a>
                 </div>
             </div>
         </div>

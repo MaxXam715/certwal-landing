@@ -1,5 +1,8 @@
 // ---------- var global ----------
-var version = 1.3267;
+var version = $('head').find('#versionContent').attr('content'),
+    mailCrt = 'info@certwal.com';
+
+console.log('version', version)
 
 
 // ---------- import ----------

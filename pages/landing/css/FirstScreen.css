@@ -105,6 +105,15 @@
     line-height: 160%;
 }
 
+.section-first .main-info .btn-container {
+    margin-top: 40px;
+}
+
+.section-first .main-info .btn-container .btn {
+    font-size: 18px;
+    padding: 14px 34px;
+}
+
 .section-first .cub-container {
     position: absolute;
     right: 0;
@@ -230,6 +239,18 @@
     }
 
     .section-first .main-info .intro-desc .text {
+        font-size: 12px;
+    }
+
+    .section-first .scroll-container .circle {
+        width: 32px;
+    }
+
+    .section-first .scroll-container .circle .icon {
+        font-size: 12px;
+    }
+
+    .section-first .scroll-container .title {
         font-size: 12px;
     }
 

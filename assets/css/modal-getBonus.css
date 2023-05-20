@@ -18,6 +18,21 @@
 
 /* ------------ */
 
+.cw-modal-getBonus .btn-close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    background-color: transparent;
+}
+
+.cw-modal-getBonus .btn-close-modal .icon {
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 .cw-modal-getBonus .container-getBonus {
 
 }
@@ -56,4 +71,27 @@
 
 .cw-modal-getBonus .container-getBonus .form-wrapper .btn-send:hover {
     background-color: #7dbd33;
+}
+
+@media (max-width: 1500px) {
+    .cw-modal .container-body {
+        width: 500px !important;
+    }
+
+    .cw-modal-getBonus .container-body .modal-content {
+        padding: 60px 40px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .cw-modal-getBonus .container-getBonus .title-modal {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cw-modal-getBonus .container-body .modal-content {
+        padding: 40px 30px !important;
+        padding-bottom: 30px !important;
+    }
 }

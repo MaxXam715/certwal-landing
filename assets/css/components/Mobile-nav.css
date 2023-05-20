@@ -38,6 +38,7 @@
     transition: all 0.4s;
     transform: translateX(100%);
     margin-left: auto;
+    will-change: transform;
 }
 
 .G-mobile-menu.open .menu-wrapper {
@@ -45,12 +46,11 @@
     will-change: transform;
 }
 
-.G-mobile-menu .menu-wrapper {
-    padding-top: 40px;
-    will-change: transform;
-}
-
 .G-mobile-menu .menu-wrapper .menu-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: inherit;
     padding: 40px 30px;
 }
 
@@ -58,6 +58,20 @@
     display: flex;
     flex-direction: column;
     grid-gap: 30px;
+    margin-bottom: auto;
+}
+
+.G-mobile-menu .menu-wrapper .menu-content .contact-us {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.G-mobile-menu .menu-wrapper .menu-content .events-container {
+    width: 100%;
+}
+
+.G-mobile-menu .menu-wrapper .menu-content .events-container .btn {
+    width: 100%;
 }
 
 .G-mobile-menu .menu-wrapper .menu-content .nav-page .btn-anchor {

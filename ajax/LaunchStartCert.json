@@ -2,25 +2,25 @@
   {
     "title": "Недвижимость",
     "desc": "Эксклюзив - 10 % от стоимости",
-    "coin": "/assets/img/cert-icon-build.svg?v=1.3267",
+    "coin": "/assets/img/cert-icon-build.svg?v=1.3271",
     "dateStart": "01.06.2023"
   },
   {
     "title": "Авто",
     "desc": "Эксклюзив - 11% от стоимости",
-    "coin": "/assets/img/cert-icon-car.svg?v=1.3267",
+    "coin": "/assets/img/cert-icon-car.svg?v=1.3271",
     "dateStart": "01.08.2023"
   },
   {
     "title": "Услуги",
     "desc": "Эксклюзив - 12%  от стоимости",
-    "coin": "/assets/img/cert-icon-products.svg?v=1.3267",
+    "coin": "/assets/img/cert-icon-products.svg?v=1.3271",
     "dateStart": "01.02.2024"
   },
   {
     "title": "Товары",
     "desc": "Эксклюзив - 13 % от стоимости",
-    "coin": "/assets/img/cert-icon-services.svg?v=1.3267",
+    "coin": "/assets/img/cert-icon-services.svg?v=1.3271",
     "dateStart": "01.11.2023"
   }
 ]

@@ -1,3 +1,10 @@
+<?php
+if ($_SERVER['HTTP_HOST'] == 'certwal-landing') {
+    $v = mt_rand(10000, 99999999);
+} else {
+    $v = 1.103;
+}
+?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -28,12 +35,13 @@
     <meta property="article:publisher" content="https://certwal.com" />
     <link rel="image_src" href="https://certwal.com/static/meta-banner.jpg">
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="version" content="<?=$v?>" id="versionContent">
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="/static/favicon.svg?v=1.3267">
-    <link rel="icon" type="image/png" href="/static/favicon.svg?v=1.3267">
-    <link rel="apple-touch-icon" href="/static/favicon.svg?v=1.3267">
-    <link rel="mask-icon" href="/static/favicon.svg?v=1.3267">
+    <link rel="shortcut icon" href="/static/favicon.svg?v=1.05">
+    <link rel="icon" type="image/png" href="/static/favicon.svg?v=1.05">
+    <link rel="apple-touch-icon" href="/static/favicon.svg?v=1.05">
+    <link rel="mask-icon" href="/static/favicon.svg?v=1.05">
 
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#131313">
@@ -46,11 +54,11 @@
     <!-- UiKit CSS -->
     <link rel="stylesheet" href="/plugins/uikit/uikit.min.css">
     <!-- Style global -->
-    <link rel="stylesheet" href="/assets/css/global.css?v=1.3267">
+    <link rel="stylesheet" href="/assets/css/global.css?v=<?=$v?>">
     <!-- Splide -->
     <link rel="stylesheet" href="/plugins/splide-4.1.3/css/splide.min.css">
     <!-- Splide -->
-    <link rel="stylesheet" href="/pages/landing/css/landing.css?v=1.3267">
+    <link rel="stylesheet" href="/pages/landing/css/landing.css?v=<?=$v?>">
 
 </head>
 <body>
@@ -61,9 +69,8 @@
 <script src="/plugins/uikit/uikit.min.js"></script>
 <script src="/plugins/splide-4.1.3/splide.min.js"></script>
 <script src="/plugins/splide-4.1.3/splide-extension-auto-scroll.min.js"></script>
-<script src="/assets/js/scripts.js?v=1.3267"></script>
-
-<script type="module" src="/pages/landing/landing.js?v=1.3267"></script>
+<script src="/assets/js/scripts.js?v=<?=$v?>"></script>
+<script type="module" src="/pages/landing/landing.js?v=<?=$v?>"></script>
 
 </body>
 </html>

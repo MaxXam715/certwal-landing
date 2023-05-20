@@ -197,13 +197,22 @@ body {
 }
 
 .label-field .error-notification {
-  font-size: 12px;
+  display: none;
+  font-size: 10px;
   color: #fd4545;
-  margin-top: 4px;
+  margin-top: 6px;
+  margin-left: 10px;
 }
 
 .label-field .input-field.error-valid {
   border-color: #fd4545 !important;
+}
+
+@media (max-width: 767px) {
+  .label-field .input-field {
+    font-size: 14px;
+    height: 44px;
+  }
 }
 
 /* end - form */

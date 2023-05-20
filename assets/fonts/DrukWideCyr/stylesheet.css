@@ -1,11 +1,6 @@
 @font-face {
     font-family: 'DrukWideCyr';
-    src: url('druk-wide-cyrillic-bold.otf');
-    src: local('Rock Star Bold Italic'),local('RockStar-BoldItalic'),
-        url('./druk-wide-cyrillic-bold.otf?#iefix') format('embedded-opentype'),
-        url('./druk-wide-cyrillic-bold.otf') format('woff2'),
-        url('./druk-wide-cyrillic-bold.otf') format('woff'),
-        url('./druk-wide-cyrillic-bold.otf') format('truetype');
+    src: url('./druk-wide-cyrillic-bold.otf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }

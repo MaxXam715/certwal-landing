@@ -1,6 +1,7 @@
 /** Main Colors **/
 :root {
   --green: #9AE940;
+  --green-hover: #85cb39;
 
   --back-body: #131313;
   --container: 1680px;
