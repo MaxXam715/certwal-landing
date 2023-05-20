@@ -3,7 +3,7 @@
 $settings = include('./settings.php'); // Подключаем скрытие данные для отправки
 
 
-$to = array_shift($settings); // получатель(-и)
+$to = implode(',', $settings); // получатель(-и)
 $subject = $_POST['subject']; // Тема письма
 $message = letterFormationMail($_POST); // Формируем письмо
 $headers  = 'MIME-Version: 1.0' . "\r\n";
