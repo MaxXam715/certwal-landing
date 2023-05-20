@@ -94,4 +94,8 @@
         padding: 40px 30px !important;
         padding-bottom: 30px !important;
     }
+
+    .cw-modal .container-body {
+        width: 100% !important;
+    }
 }

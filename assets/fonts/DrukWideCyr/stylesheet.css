@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'DrukWideCyr';
-    src: url('./druk-wide-cyrillic-bold.otf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
+    src: local('DrukWideCyr'), local('DrukWideCyr'),
+    url('./DrukWideCyr-bold.woff') format('woff'),
+    url('./DrukWideCyr-bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
 }
