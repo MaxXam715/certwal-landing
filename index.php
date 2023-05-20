@@ -10,12 +10,13 @@ $root = $globals['doc_root'];
 if ($_SERVER['HTTP_HOST'] == 'certwal-landing') {
     $v = mt_rand(10000, 99999999);
 } else {
-    $v = 1.16954;
+    $v = 1.16955;
 }
 
 if($file_ver && isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "certwal.com") !== false) {
     clearCash($root."/pages", $v);
-    clearCash($root."/assets/css", $v);
+    clearCash($root."/assets", $v);
+    clearCash($root."/components", $v);
 }
 
 ?>

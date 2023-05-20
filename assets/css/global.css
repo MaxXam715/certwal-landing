@@ -1,19 +1,19 @@
 /* ------------------------------- import ------------------------------- */
 /* Variable */
-@import url("/assets/css/variables.css?v=1.16946");
+@import url("/assets/css/variables.css");
 /* fonts */
-@import url("/assets/css/fonts.css?v=1.16946");
+@import url("/assets/css/fonts.css");
 /* Icon custom */
-@import url("/assets/icons/icons.css?v=1.16946");
+@import url("/assets/icons/icons.css");
 /* Bestcon UI-kit */
-@import url("/assets/css/uikit.css?v=1.16946");
+@import url("/assets/css/uikit.css");
 /* Mobile nav */
-@import url("/assets/css/components/Mobile-nav.css?v=1.16946");
+@import url("/assets/css/components/Mobile-nav.css");
 /* Modal */
-@import url("/assets/css/modal.css?v=1.16946");
-@import url("/assets/css/modal-getBonus.css?v=1.16946");
+@import url("/assets/css/modal.css");
+@import url("/assets/css/modal-getBonus.css");
 /* reset CSS */
-@import url("/assets/css/reset.css?v=1.16946");
+@import url("/assets/css/reset.css");
 /* ---------------------------------------------------------------------- */
 
 html, body {
