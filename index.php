@@ -2,7 +2,7 @@
 if ($_SERVER['HTTP_HOST'] == 'certwal-landing') {
     $v = mt_rand(10000, 99999999);
 } else {
-    $v = 1.16945;
+    $v = 1.16946;
 }
 ?>
 <!doctype html>
