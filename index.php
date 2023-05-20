@@ -26,7 +26,7 @@ if(isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "certwal.com") 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <!-- meta -->
-    <meta property="og:locale" content="ru_RU 3">
+    <meta property="og:locale" content="ru_RU">
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="og:site_name" content="CERTWAL" />
     <meta property="vk:image" content="https://certwal.com/static/meta-banner.jpg" />
