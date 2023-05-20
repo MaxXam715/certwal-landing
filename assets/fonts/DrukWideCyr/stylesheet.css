@@ -3,6 +3,6 @@
     src: local('DrukWideCyr'), local('DrukWideCyr'),
     url('./DrukWideCyr-bold.woff') format('woff'),
     url('./DrukWideCyr-bold.ttf') format('truetype');
-    font-weight: 800;
+    font-weight: 400;
     font-style: normal;
 }

@@ -16,6 +16,10 @@
 @import url("/assets/css/reset.css?v=1.16946");
 /* ---------------------------------------------------------------------- */
 
+html, body {
+  text-rendering: optimizeLegibility;
+}
+
 body {
   overflow-y: overlay;
   overflow-x: hidden !important;
