@@ -1,12 +1,12 @@
-import G_header from "/components/header.js"; // header
-import FirstScreen from "./FirstScreen.js"; // первй экран
-import RunningLine from "./RunningLine.js"; // бегущая строка (слайдер)
-import AboutProject from "./AboutProject.js"; // О проекте
-import LaunchStart from "./LaunchStart.js"; // Запуск цифровых сертификатов
-import ActivateCertificate from "./ActivateCertificate.js"; // Как активировать сертификат
-import CoinInfo from "./CoinInfo.js"; // Инфо о монете
-import RoadMap from "./RoadMap.js"; // Дорожная карта
-import Cooperation from "./Cooperation.js"; // Сотрудничество
+import G_header from '/components/header.js'
+import FirstScreen from './FirstScreen.js'
+import RunningLine from './RunningLine.js'
+import AboutProject from './AboutProject.js'
+import LaunchStart from './LaunchStart.js'
+import ActivateCertificate from './ActivateCertificate.js'
+import CoinInfo from './CoinInfo.js'
+import RoadMap from './RoadMap.js'
+import Cooperation from './Cooperation.js'
 
 G_header(); // header
 FirstScreen(); // первй экран

@@ -1,6 +1,6 @@
 <?php
 
-function clearCash($root, $v){
+function clearCash($root, $v) {
     if (is_dir($root)) {
         $files = scandir($root);
 

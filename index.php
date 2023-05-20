@@ -4,19 +4,16 @@ $_SESSION['subdomain'] = $globals['subdomain'];
 
 require __DIR__ . '/backend/clearCash.php';
 
-$file_ver = 1;
-$root = $globals['doc_root'];
-
 if ($_SERVER['HTTP_HOST'] == 'certwal-landing') {
-    $v = mt_rand(10000, 99999999);
+    $v = mt_rand(100000, 99999999);
 } else {
-    $v = 1.16957;
+    $v = "1.3.142";
 }
 
-if($file_ver && isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "certwal.com") !== false) {
-    clearCash($root."/pages", $v);
-    clearCash($root."/assets", $v);
-    clearCash($root."/components", $v);
+if(isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "certwal.com") !== false) {
+    clearCash(__DIR__."/pages", $v);
+    clearCash(__DIR__."/assets", $v);
+    clearCash(__DIR__."/components", $v);
 }
 
 ?>
