@@ -1,6 +1,9 @@
 // ---------- var global ----------
 var version = $('head').find('#versionContent').attr('content'),
-    mailCrt = 'info@certwal.com';
+    mailCrt = 'info@certwal.com',
+    vh = window.innerHeight / 100;
+
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 // ---------- import ----------
 $.ajax({ // header
@@ -21,12 +24,6 @@ $.ajax({ // telegram
     dataType: "script"
 });
 
-
-
-$(function () {
-    const vh = window.innerHeight / 100;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
 
 function mergeJson(json1, json2){
     for(var i in json1){
