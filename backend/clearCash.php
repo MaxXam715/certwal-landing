@@ -10,11 +10,6 @@ function clearCash($root, $v){
             if (is_dir($root . "/" . $file)) {
                 clearCash($root . "/" . $file, $v);
             } else {
-                if (strpos($file, '.js')) {
-                    $content = file_get_contents($root . "/" . $file);
-                    $content = preg_replace('/import(.+)from.+([\'|\"])(.+).js(.+)/', 'import${1}from \'${3}.js?v='.$v."'", $content);
-                    file_put_contents($root . "/" . $file, $content);
-                }
                 if (strpos($file, '.css')) {
                     $content = file_get_contents($root . "/" . $file);
                     $content = preg_replace('/@import.+url\(([\'|\"])(.+).css(.+)\)/', '@import url("${2}.css?v='.$v.'")', $content);

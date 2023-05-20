@@ -2,9 +2,6 @@
 var version = $('head').find('#versionContent').attr('content'),
     mailCrt = 'info@certwal.com';
 
-console.log('version', version)
-
-
 // ---------- import ----------
 $.ajax({ // header
     async: false,

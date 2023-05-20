@@ -2,7 +2,7 @@
 GLOBAL $globals;
 $_SESSION['subdomain'] = $globals['subdomain'];
 
-require('/backend/clearCash.php');
+require __DIR__ . '/backend/clearCash.php';
 
 $file_ver = 1;
 $root = $globals['doc_root'];
