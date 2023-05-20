@@ -10,7 +10,7 @@ $root = $globals['doc_root'];
 if ($_SERVER['HTTP_HOST'] == 'certwal-landing') {
     $v = mt_rand(10000, 99999999);
 } else {
-    $v = 1.16955;
+    $v = 1.16956;
 }
 
 if($file_ver && isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "certwal.com") !== false) {
