@@ -5,7 +5,6 @@ var version = $('head').find('#versionContent').attr('content'),
 const resizeOps = () => {
     document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
 };
-
 resizeOps();
 window.addEventListener("resize", resizeOps);
 
@@ -27,15 +26,6 @@ $.ajax({ // telegram
     url: "/plugins/sendTelegram.js?v="+version,
     dataType: "script"
 });
-
-
-$(document).on('click', 'body', function () {
-   var width = window.innerWidth,
-       height = window.innerHeight;
-
-    alert('width: '+width+ '\nheight: '+height, );
-});
-
 
 function mergeJson(json1, json2){
     for(var i in json1){

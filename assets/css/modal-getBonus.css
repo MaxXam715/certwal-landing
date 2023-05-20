@@ -90,12 +90,19 @@
 }
 
 @media (max-width: 767px) {
-    .cw-modal-getBonus .container-body .modal-content {
-        padding: 40px 30px !important;
-        padding-bottom: 30px !important;
+    .cw-modal-getBonus .container-body {
+        border: none;
     }
 
-    .cw-modal .container-body {
+    .cw-modal-getBonus .container-body .modal-content {
+        padding: 50px 30px !important;
+    }
+
+    .cw-modal-getBonus .container-body {
         width: 100% !important;
+    }
+
+    .cw-modal-getBonus .container-getBonus .form-wrapper .btn-send {
+        font-size: 14px;
     }
 }
