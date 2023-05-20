@@ -15,7 +15,7 @@ if ($_SERVER['HTTP_HOST'] == 'certwal-landing') {
 
 if($file_ver && isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "certwal.com") !== false) {
     clearCash($root."/pages", $v);
-    clearCash($root."/assets", $v);
+    clearCash($root."/assets/css", $v);
 }
 
 ?>
