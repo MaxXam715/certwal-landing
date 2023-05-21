@@ -7,7 +7,7 @@ require __DIR__ . '/backend/clearCash.php';
 if ($_SERVER['HTTP_HOST'] == 'certwal-landing') {
     $v = mt_rand(100000, 99999999);
 } else {
-    $v = "1.3.146";
+    $v = "1.3.147";
 }
 
 if(isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "certwal.com") !== false) {

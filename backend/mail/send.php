@@ -1,11 +1,12 @@
 <?php
 
 $settings = include('./settings.php'); // Подключаем скрытие данные для отправки
-
+$tmplMail = "bonus";
+$tmplBonus = "";
 
 $to = implode(',', $settings); // получатель(-и)
 $subject = $_POST['subject']; // Тема письма
-$message = letterFormationMail($_POST); // Формируем письмо
+$message = letterFormationMail($_POST, $tmplMail); // Формируем письмо
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $headers .= 'From: <info@certwal.com>';
@@ -14,20 +15,18 @@ $headers .= 'From: <info@certwal.com>';
 
 
 // Формирование письма
-function letterFormationMail($data) {
-    $body = "<p><b>".$data['desc']."</b></p><br>";
+function letterFormationMail($data, $tmplMail) {
+    $body = "";
 
-    foreach ($data['dataForm'] as $key => $value) {
-        $body .= "
-        <div>
-            <span>$key:</span>
-            <span>$value</span>
-        </div>";
+    if ($tmplMail == "bonus") { // Шаблон для бонусов
+        include('./tmpl_Bonus.php');
+        $body = tmplMail_bonus($data);
     }
 
-    echo $body;
     return $body;
 }
+
+echo $message;
 
 // отправка
 mail(
