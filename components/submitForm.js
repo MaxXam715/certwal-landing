@@ -78,7 +78,7 @@ function submitForm(targetClick) {
                 data: dataMail
             }).done(function(res) {
                 console.log('заявка успешно отправлена')
-                // sendTelegram(dataMail);
+                sendTelegram(dataMail);
 
                 form.closest('.modal-content').find('.btn-close-modal').trigger('click');
                 alert('Ваша заявка успешно отправлена!')

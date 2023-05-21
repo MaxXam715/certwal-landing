@@ -5,19 +5,19 @@ export default function initModal_getBonus() {
         <h3 class="title-modal">Получить бонус по сертификату</h3>
         <form class="form-wrapper">
             <label class="label-field">
-                <input type="text" class="input-field valid-check" autocomplete="on" name="name" placeholder="Имя" value="Иван">
+                <input type="text" class="input-field valid-check" autocomplete="on" name="name" placeholder="Имя">
             </label>
             <label class="label-field">
                 <span class="title"></span>
-                <input type="text" class="input-field valid-email" autocomplete="on" name="email" placeholder="Почта" value="test@mail.ru">
+                <input type="text" class="input-field valid-email" autocomplete="on" name="email" placeholder="Почта">
             </label>
             <label class="label-field">
                 <span class="title"></span>
-                <input type="text" class="input-field valid-check" autocomplete="on" name="number-cert" placeholder="Номер" value="0857123">
+                <input type="text" class="input-field valid-check" autocomplete="on" name="number-cert" placeholder="Номер">
             </label>
             <label class="label-field">
                 <span class="title"></span>
-                <input type="text" class="input-field valid-check" autocomplete="on" name="number-wallet" placeholder="Номер кошелька" value="VB3423F-4YH23R-C12341">
+                <input type="text" class="input-field valid-check" autocomplete="on" name="number-wallet" placeholder="Номер кошелька">
             </label>
             <button type="button" class="btn btn-primary btn-send js-btn-send" data-target="get-bonus">Получить бонус</button>
         </form>
