@@ -55,7 +55,6 @@ function submitForm(targetClick) {
                 label = input.attr('placeholder'),
                 value = input.val();
 
-            // arrayForm.push({[label]: value})
             arrayForm[label] = value;
         });
 
@@ -78,7 +77,7 @@ function submitForm(targetClick) {
                 data: dataMail
             }).done(function(res) {
                 console.log('заявка успешно отправлена')
-                // sendTelegram(dataMail);
+                sendTelegram(dataMail);
 
                 form.closest('.modal-content').find('.btn-close-modal').trigger('click');
                 alert('Ваша заявка успешно отправлена!')
