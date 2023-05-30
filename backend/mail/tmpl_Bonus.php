@@ -2,9 +2,14 @@
 
 function tmplMail_bonus($data) {
 
-    print_r($data);
+    $name = ($data['dataForm']['Имя'] != '' && $data['dataForm']['Имя'] ) ? $data['dataForm']['Имя'] : 'Не указано';
+    $mail = ($data['dataForm']['Почта'] != '' && $data['dataForm']['Почта'] ) ? $data['dataForm']['Почта'] : 'Не указано';
+    $phone = ($data['dataForm']['Телефон'] != '' && $data['dataForm']['Телефон'] ) ? $data['dataForm']['Телефон'] : 'Не указано';
+    $numberCert = ($data['dataForm']['Номер сертификата'] != '' && $data['dataForm']['Номер сертификата'] ) ? $data['dataForm']['Номер сертификата'] : 'Не указано';
+    $wallet = ($data['dataForm']['Кошелек'] != '' && $data['dataForm']['Кошелек'] ) ? $data['dataForm']['Кошелек'] : 'Не указано';
 
-$body = '
+
+return <<<HTML
 <table bgcolor="#DADADA" border="0" cellpadding="0" cellspacing="0" style="margin:0; padding:0; font-family: Helvetica, Arial, sans-serif;" width="100%">
     <tbody>
         <tr>
@@ -52,15 +57,15 @@ $body = '
                                     <tbody>
                                         <tr style="padding: 0 30px">
                                             <td width="50%" height="40" style="border-bottom: 1px solid #424242">Имя</td>
-                                            <td width="50%" height="40" style="border-bottom: 1px solid #424242; text-align: right">Алексей</td>
+                                            <td width="50%" height="40" style="border-bottom: 1px solid #424242; text-align: right">$name</td>
                                         </tr>
                                         <tr style="padding: 0 30px">
                                             <td width="50%" height="40" style="border-bottom: 1px solid #424242">Телефон</td>
-                                            <td width="50%" height="40" style="border-bottom: 1px solid #424242; text-align: right">+7 (495) 512-13-65</td>
+                                            <td width="50%" height="40" style="border-bottom: 1px solid #424242; text-align: right">$phone</td>
                                         </tr>
                                         <tr style="padding: 0 30px">
                                             <td width="50%" height="40">E-mail</td>
-                                            <td width="50%" height="40" style="text-align: right">не указан</td>
+                                            <td width="50%" height="40" style="text-align: right">$mail</td>
                                         </tr>
                                         <tr>
                                             <td height="10"></td>
@@ -90,11 +95,11 @@ $body = '
                                         </tr>
                                         <tr style="padding: 0 30px">
                                             <td width="50%" height="40" style="border-bottom: 1px solid #424242">Номер</td>
-                                            <td width="50%" height="40" style="border-bottom: 1px solid #424242; text-align: right">0851238</td>
+                                            <td width="50%" height="40" style="border-bottom: 1px solid #424242; text-align: right">$numberCert</td>
                                         </tr>
                                         <tr style="padding: 0 30px">
                                             <td width="50%" height="40">Кошелек</td>
-                                            <td width="50%" height="40" style="text-align: right">не указан</td>
+                                            <td width="50%" height="40" style="text-align: right">$wallet</td>
                                         </tr>
                                         <tr>
                                             <td height="10"></td>
@@ -141,9 +146,8 @@ $body = '
             <td height="30"></td>
         </tr>
     </tbody>
-</table>';
-
-return $body;
+</table>
+HTML;
 }
 
 

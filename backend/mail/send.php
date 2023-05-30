@@ -23,6 +23,7 @@ function letterFormationMail($data, $tmplMail) {
         $body = tmplMail_bonus($data);
     }
 
+
     return $body;
 }
 
