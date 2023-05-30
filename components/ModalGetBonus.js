@@ -13,11 +13,11 @@ export default function initModal_getBonus() {
             </label>
             <label class="label-field">
                 <span class="title"></span>
-                <input type="text" class="input-field valid-check" autocomplete="on" name="number-cert" placeholder="Номер">
+                <input type="text" class="input-field valid-check" autocomplete="on" name="number-cert" placeholder="Номер сертификата">
             </label>
             <label class="label-field">
                 <span class="title"></span>
-                <input type="text" class="input-field valid-check" autocomplete="on" name="number-wallet" placeholder="Номер кошелька">
+                <input type="text" class="input-field valid-check" autocomplete="on" name="number-wallet" placeholder="Кошелек">
             </label>
             <button type="button" class="btn btn-primary btn-send js-btn-send" data-target="get-bonus">Получить бонус</button>
         </form>

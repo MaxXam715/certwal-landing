@@ -27,7 +27,7 @@ $.ajax({ // telegram
     dataType: "script"
 });
 
-function mergeJson(json1, json2){
+function mergeJson(json1, json2) {
     for(var i in json1){
         if(getType(json1[i]) == 'object'){
             for(var k in json1[i]){

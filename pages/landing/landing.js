@@ -9,7 +9,7 @@ import RoadMap from './RoadMap.js'
 import Cooperation from './Cooperation.js'
 
 G_header(); // header
-FirstScreen(); // первй экран
+FirstScreen(); // первый экран
 RunningLine(); // бегущая строка (слайдер)
 AboutProject(); // О проекте
 LaunchStart(); // Запуск сертиф. на старте

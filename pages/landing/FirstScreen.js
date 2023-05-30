@@ -6,7 +6,7 @@ export default function FirstScreen() {
             <div class="circle-blur green circle-blur-1"></div>
         
             <div class="main-info">
-                <h1 class="index-header_h1 header-main-index">откройте будущее<br> с <span class="separator-text">КРИПТО-сертификатами</span>,<br>обеспеченными криптовалютой</h1>
+                <h1 class="index-header_h1 header-main-index">откройте будущее<br> с <span class="separator-text">CERTWAL-сертификатами</span>,<br>обеспеченными SHERA TOKENS</h1>
                 <div class="intro-desc">
                     <div class="circle-box">
                         <div class="circle-empty"></div> 
@@ -14,7 +14,7 @@ export default function FirstScreen() {
                             <i class="icon arrow-top-right"></i>
                         </div> 
                     </div>
-                    <p class="text">Платформа с цифровыми сертификатами, которая позволяет организациям безопасно выдавать цифровые монеты и управлять ими</p>
+                    <p class="text">Платформа с цифровыми сертификатами, которая позволяет организациям безопасно награждать shera tokens (SHR)</p>
                 </div>
                 <div class="btn-container">
                     <button type="button" class="btn btn-primary js-btn-modal-getBonus">Получить бонус</button>

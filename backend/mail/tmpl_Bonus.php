@@ -1,6 +1,9 @@
 <?php
 
 function tmplMail_bonus($data) {
+
+    print_r($data);
+
 $body = '
 <table bgcolor="#DADADA" border="0" cellpadding="0" cellspacing="0" style="margin:0; padding:0; font-family: Helvetica, Arial, sans-serif;" width="100%">
     <tbody>
