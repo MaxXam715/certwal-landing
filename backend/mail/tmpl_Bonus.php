@@ -91,15 +91,15 @@ return <<<HTML
                                     <tbody>
                                         <tr style="padding: 0 30px">
                                             <td width="50%" height="40" style="border-bottom: 1px solid #424242">Серия</td>
-                                            <td width="50%" height="40" style="border-bottom: 1px solid #424242; text-align: right">A</td>
+                                            <td width="50%" height="40" style="border-bottom: 1px solid #424242; color: #ffffff; text-align: right">A</td>
                                         </tr>
                                         <tr style="padding: 0 30px">
                                             <td width="50%" height="40" style="border-bottom: 1px solid #424242">Номер</td>
-                                            <td width="50%" height="40" style="border-bottom: 1px solid #424242; text-align: right">$numberCert</td>
+                                            <td width="50%" height="40" style="border-bottom: 1px solid #424242; color: #ffffff; text-align: right">$numberCert</td>
                                         </tr>
                                         <tr style="padding: 0 30px">
                                             <td width="50%" height="40">Кошелек</td>
-                                            <td width="50%" height="40" style="text-align: right">$wallet</td>
+                                            <td width="50%" height="40" style="text-align: right; color: #ffffff;">$wallet</td>
                                         </tr>
                                         <tr>
                                             <td height="10"></td>
