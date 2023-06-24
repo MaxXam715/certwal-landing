@@ -4,9 +4,11 @@ export default function FirstScreen() {
         <div class="G-container">
         
             <div class="circle-blur green circle-blur-1"></div>
+            
+<!--            Откройте будущее с сертификатами лояльности от Certwal, обеспеченными Shera Tokens-->
         
             <div class="main-info">
-                <h1 class="index-header_h1 header-main-index">откройте будущее<br> с <span class="separator-text">CERTWAL-сертификатами</span>,<br>обеспеченными SHERA TOKENS</h1>
+                <h1 class="index-header_h1 header-main-index">откройте будущее с <br><span class="separator-text">сертификатами лояльности от Certwal</span>, обеспеченными <br>SHERA TOKENS</h1>
                 <div class="intro-desc">
                     <div class="circle-box">
                         <div class="circle-empty"></div> 

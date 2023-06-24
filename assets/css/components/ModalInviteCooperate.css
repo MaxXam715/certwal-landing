@@ -1,0 +1,25 @@
+.modal-invite-cooperate .container-btns {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 20px;
+    width: 100%;
+}
+
+.modal-invite-cooperate .container-btns .btn {
+    width: 100%;
+}
+
+/* ---------------------- */
+
+.modal-qr {
+
+}
+
+.modal-qr .wrapper-qr {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.modal-qr .wrapper-qr .img-qr {
+    display: block;
+}
