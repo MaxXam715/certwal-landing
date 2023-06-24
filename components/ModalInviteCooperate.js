@@ -71,7 +71,7 @@ export default function ModalInviteCooperate() {
         var modalQR = new Modal({
             classModal: 'modal-qr', // класс для модального окна
             mode: 'center', // center | top | right
-            title: 'Связаться с нами',
+            title: id_qr,
             content: htmlqr, // HTML-контент
             width: '500px', // задаем ширину окна "560" / " " (авто)
             esc: true, // закрыть по клавише ESC
