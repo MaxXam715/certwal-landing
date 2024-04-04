@@ -34,8 +34,8 @@ if(isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "certwal.com") 
     <meta property="og:image" content="https://certwal.com/static/meta-banner.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:title" content="Платформа с цифровыми сертификатами, которая позволяет организациям безопасно выдавать цифровые монеты и управлять ими" />
-    <meta property="og:long_title" content="Платформа с цифровыми сертификатами, которая позволяет организациям безопасно выдавать цифровые монеты и управлять ими">
+    <meta property="og:title" content="Платформа с цифровыми сертификатами" />
+    <meta property="og:long_title" content="Платформа с цифровыми сертификатами">
     <meta property="og:type" content="article" />
     <meta property="og:description" content="Платформа с цифровыми сертификатами, которая позволяет организациям безопасно выдавать цифровые монеты и управлять ими" />
     <meta name="description" content="Платформа с цифровыми сертификатами, которая позволяет организациям безопасно выдавать цифровые монеты и управлять ими" />
