@@ -13,7 +13,7 @@ export default function G_header() {
                         <button type="button" class="btn btn-anchor" data-anchor="about-project">О проекте</button>
                         <button type="button" class="btn btn-anchor" data-anchor="launch-start">Сертификаты</button>
                         <button type="button" class="btn btn-anchor" data-anchor="activate-certificate">Активация</button>
-                        <button type="button" class="btn btn-anchor" data-anchor="coin-info">Shera-coin</button>
+                        <button type="button" class="btn btn-anchor" data-anchor="coin-info">ЦФА</button>
                         <button type="button" class="btn btn-anchor" data-anchor="road-map">Дорожная карта</button>
                     </nav>
                 </div>

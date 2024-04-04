@@ -5,10 +5,10 @@ export default function FirstScreen() {
         
             <div class="circle-blur green circle-blur-1"></div>
             
-<!--            Откройте будущее с сертификатами лояльности от Certwal, обеспеченными Shera Tokens-->
+<!--            Откройте будущее с сертификатами лояльности от Certwal, обеспеченными ЦФАs-->
         
             <div class="main-info">
-                <h1 class="index-header_h1 header-main-index">откройте будущее с <br><span class="separator-text">сертификатами лояльности от Certwal</span>, обеспеченными <br>SHERA TOKENS</h1>
+                <h1 class="index-header_h1 header-main-index">откройте будущее с <br><span class="separator-text">сертификатами лояльности от Certwal</span>, обеспеченными <br>ЦФА</h1>
                 <div class="intro-desc">
                     <div class="circle-box">
                         <div class="circle-empty"></div> 
@@ -16,7 +16,7 @@ export default function FirstScreen() {
                             <i class="icon arrow-top-right"></i>
                         </div> 
                     </div>
-                    <p class="text">Платформа с цифровыми сертификатами, которая позволяет организациям безопасно награждать shera tokens (SHR)</p>
+                    <p class="text">Платформа с цифровыми сертификатами, которая позволяет организациям безопасно награждать ЦФА</p>
                 </div>
                 <div class="btn-container">
                     <button type="button" class="btn btn-primary js-btn-modal-getBonus">Получить бонус</button>
