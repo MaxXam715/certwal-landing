@@ -5,7 +5,7 @@ export default function Cooperation() {
             <div class="wrapper-container">
                 <h3 class="title-section index-header_h3">Приглашаем<br>к сотрудничеству</h3>
                 <p class="desc text-md">Команда Certwal создаёт чувство общности и партнерства между компаниями и  поддерживающей аудиторией</p>
-                <button type="button" class="btn btn-primary js-btn-modal">Построим будущее вместе</button>
+<!--                <button type="button" class="btn btn-primary js-btn-modal">Построим будущее вместе</button>-->
                 <div class="contact-info">
                     <a href="mailto: ${mailCrt}" class="contact mail">${mailCrt}</a>
                 </div>
