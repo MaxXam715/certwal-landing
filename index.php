@@ -74,6 +74,7 @@ if(isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "certwal.com") 
 </head>
 <body>
 
+
 <main id="app"></main>
 
 <script src="/plugins/jquery-3.6.4.min.js"></script>
